@@ -1,5 +1,9 @@
 # Battery Viewer for Android
 
+<div align="center">
+  <img title="Battery Viewer" src="https://github.com/gcch/battery-viewer/blob/master/img/icon/ic_launcher_512.png" >
+</div>
+
 ## Overview
 
 バッテリの状態をチェックするための Android アプリ。
