@@ -13,6 +13,25 @@
 Google Play で公開しようと思ったものの、何かに問題があり、公開せずにそのままお蔵入りさせてしまったような記憶あり。
 
 
+## Screenshots
+
+<div align="center">
+  <img title="Battery Viewer Screenshots 01" src="https://github.com/gcch/battery-viewer/blob/master/img/screenshots/BatteryViewer_ss-1.png" width="300" >
+</div>
+　
+<div align="center">
+  <img title="Battery Viewer Screenshots 02" src="https://github.com/gcch/battery-viewer/blob/master/img/screenshots/BatteryViewer_ss-2.png" width="300" >
+</div>
+　
+<div align="center">
+  <img title="Battery Viewer Screenshots 04" src="https://github.com/gcch/battery-viewer/blob/master/img/screenshots/BatteryViewer_ss-4.png" width="300" >
+</div>
+　
+<div align="center">
+  <img title="Battery Viewer Screenshots 06" src="https://github.com/gcch/battery-viewer/blob/master/img/screenshots/BatteryViewer_ss-6.png" width="300" >
+</div>
+
+
 ## Development Environment
 
 Android Studio にて開発。
