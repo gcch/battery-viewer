@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 tag
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.tag.batteryviewer"
+    android:installLocation="internalOnly" >
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Permissions: Amazon Mobile Ads -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity" android:launchMode="singleTop" />
+        <activity android:name=".LegendsActivity" android:launchMode="singleTop" />
+        <activity android:name=".BatteryInfoActivity" android:launchMode="singleTop" />
+        <activity android:name=".DebugActivity" android:launchMode="singleTop" />
+        <activity
+            android:name="com.amazon.device.ads.AdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />    <!-- Amazon Mobile Ads -->
+
+        <!-- Notification -->
+        <service
+            android:name=".BatteryStatusNotificationService"
+            android:exported="false" />
+
+        <!-- Widget: 1 x 1 -->
+        <receiver android:name=".BatteryStatusAppWidget1x1Provider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_1x1" />
+        </receiver>
+        <service android:name=".BatteryStatusAppWidget1x1Provider$AppWidget1x1UpdateService">
+            <intent-filter>
+                <action android:name=".IWidget1x1AidlInterface" />
+            </intent-filter>
+        </service>
+
+        <!-- Widget: 2 x 1 -->
+        <receiver android:name=".BatteryStatusAppWidget2x1Provider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_2x1" />
+        </receiver>
+        <service android:name=".BatteryStatusAppWidget2x1Provider$AppWidget2x1UpdateService" >
+            <intent-filter>
+                <action android:name=".IWidget2x1AidlInterface" />
+            </intent-filter>
+        </service>
+
+        <!-- Receiver: Run on boot -->
+        <receiver android:name=".RunOnBootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

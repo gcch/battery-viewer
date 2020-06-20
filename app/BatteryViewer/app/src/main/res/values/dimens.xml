@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 tag
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Padding / Margin -->
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+
+
+    <!-- for Switch -->
+    <dimen name="switchPadding">16dp</dimen>
+    <dimen name="switchCircleDiameter">96dp</dimen>
+    <dimen name="switchTextSize">14sp</dimen>
+
+    <!-- for Widget -->
+    <dimen name="widgetCornerRadius">12dp</dimen>
+    <dimen name="widgetBaseSize">72dp</dimen>
+    <dimen name="widgetBaseSizeDouble">132dp</dimen>
+
+    <!-- for Table -->
+    <dimen name="table_dividerHeight">1dp</dimen>
+    <dimen name="table_textSize">16sp</dimen>
+    <dimen name="table_titleTextSize">18sp</dimen>
+    <dimen name="table_ValueColumnWidth">144dp</dimen>
+    <dimen name="table_textPaddingVertical">8dp</dimen>
+    <dimen name="table_textPaddingHorizontal">8dp</dimen>
+
+    <!-- for General -->
+    <dimen name="textSizeLarge">18sp</dimen>
+    <dimen name="textPaddingVertical">8dp</dimen>
+    <dimen name="textPaddingHorizontal">8dp</dimen>
+
+    <!-- for CardView -->
+    <dimen name="cardview_horizontal_margin">16dp</dimen>
+    <dimen name="cardview_vertical_margin">16dp</dimen>
+    <dimen name="cardview_horizontal_padding">16dp</dimen>
+    <dimen name="cardview_vertical_padding">16dp</dimen>
+    <dimen name="cardview_contents_area_vertical_space">16dp</dimen>
+    <dimen name="cardview_contents_area_horizontal_space">16dp</dimen>
+
+</resources>

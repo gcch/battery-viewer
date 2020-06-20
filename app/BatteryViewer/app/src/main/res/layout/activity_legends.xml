@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 tag
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardview_vertical_margin"
+                android:layout_marginLeft="@dimen/cardview_horizontal_margin"
+                android:layout_marginRight="@dimen/cardview_horizontal_margin"
+                android:layout_marginTop="@dimen/cardview_vertical_margin"
+                card_view:cardCornerRadius="0dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/cardview_contents_area_horizontal_space"
+                    android:paddingTop="@dimen/cardview_contents_area_vertical_space"
+                    android:paddingRight="@dimen/cardview_contents_area_horizontal_space"
+                    android:paddingBottom="@dimen/cardview_contents_area_vertical_space"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_legendsBgColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                        android:paddingTop="@dimen/table_textPaddingVertical"
+                        android:paddingRight="@dimen/table_textPaddingHorizontal"
+                        android:paddingBottom="@dimen/table_textPaddingVertical"
+                        android:text="@string/text_legendsBgColor"
+                        android:textSize="@dimen/table_textSize"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin" >
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Color: unknown -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsColorWidgetBgUnknown"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:alpha="0.75"
+                                android:src="@drawable/widget_background_unknown" />
+                            <TextView
+                                android:id="@+id/textView_legendsColorWidgetBgUnknownValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_background_unknown_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Color: low -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsColorWidgetBgLow"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:alpha="0.75"
+                                android:src="@drawable/widget_background_low" />
+                            <TextView
+                                android:id="@+id/textView_legendsColorWidgetBgLowValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_background_low_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Color: medium -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsColorWidgetBgMedium"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:alpha="0.75"
+                                android:src="@drawable/widget_background_medium" />
+                            <TextView
+                                android:id="@+id/textView_legendsColorWidgetBgMediumValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_background_medium_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Color: high -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsColorWidgetHighUnknown"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:alpha="0.75"
+                                android:src="@drawable/widget_background_high" />
+                            <TextView
+                                android:id="@+id/textView_legendsColorWidgetBgHighValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_background_high_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Color: charging -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsColorWidgetChargingUnknown"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:alpha="0.75"
+                                android:src="@drawable/widget_background_charging" />
+                            <TextView
+                                android:id="@+id/textView_legendsColorWidgetBgChargingValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_background_charging_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardview_vertical_margin"
+                android:layout_marginLeft="@dimen/cardview_horizontal_margin"
+                android:layout_marginRight="@dimen/cardview_horizontal_margin"
+                android:layout_marginTop="@dimen/cardview_vertical_margin"
+                card_view:cardCornerRadius="0dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/cardview_contents_area_horizontal_space"
+                    android:paddingTop="@dimen/cardview_contents_area_vertical_space"
+                    android:paddingRight="@dimen/cardview_contents_area_horizontal_space"
+                    android:paddingBottom="@dimen/cardview_contents_area_vertical_space"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_legendsWidgetIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                        android:paddingTop="@dimen/table_textPaddingVertical"
+                        android:paddingRight="@dimen/table_textPaddingHorizontal"
+                        android:paddingBottom="@dimen/table_textPaddingVertical"
+                        android:text="@string/text_legendsWidgetIcon"
+                        android:textSize="@dimen/table_textSize"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin" >
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Color: unknown -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetUnknown"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_unknown"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetUnknownValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_unknown_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Battery Lv 0 -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetLv0"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_battery_levels_0_of_5"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetLv0Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_lv0_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Battery Lv 1 -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetLv1"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_battery_levels_1_of_5"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetLv1Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_lv1_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Battery Lv 2 -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetLv2"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_battery_levels_2_of_5"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetLv2Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_lv2_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Battery Lv 3 -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetLv3"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_battery_levels_3_of_5"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetLv3Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_lv3_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Battery Lv 4 -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetLv4"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_battery_levels_4_of_5"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetLv4Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_lv4_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Battery Lv 5 -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetLv5"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_battery_levels_5_of_5"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetLv5Value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_lv5_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Charging (AC) -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetChargingAC"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_ac"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetChargingACValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_charging_ac_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Charging (USB) -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetChargingUSB"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_usb"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetChargingUSBValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_charging_usb_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                        <!-- Icon: Charging (Wireless) -->
+                        <TableRow android:gravity="center">
+                            <ImageView
+                                android:id="@+id/imageView_legendsIconWidgetChargingWireless"
+                                android:layout_width="@dimen/widgetBaseSize"
+                                android:layout_height="@dimen/widgetBaseSize"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:src="@drawable/ic_wireless"
+                                android:background="@color/colorDivider" />
+                            <TextView
+                                android:id="@+id/textView_legendsIconWidgetChargingWirelessValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                                android:paddingTop="@dimen/table_textPaddingVertical"
+                                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                                android:paddingBottom="@dimen/table_textPaddingVertical"
+                                android:layout_weight="1"
+                                android:text="@string/widget_icon_charging_wireless_description"
+                                android:textSize="@dimen/table_textSize" />
+                        </TableRow>
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_dividerHeight"
+                            android:background="@color/colorDivider" />
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

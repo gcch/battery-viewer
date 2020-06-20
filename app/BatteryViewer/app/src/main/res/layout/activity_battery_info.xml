@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 tag
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_batteryInfoTableTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/table_textPaddingHorizontal"
+        android:paddingTop="@dimen/table_textPaddingVertical"
+        android:paddingRight="@dimen/table_textPaddingHorizontal"
+        android:text="@string/batteryInfoTableTitle"
+        android:textSize="@dimen/table_titleTextSize"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" >
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Present -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_present"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_present"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView_presentValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Technology -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_technology"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_technologyValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Health -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_health"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_healthValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Status -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_status"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_statusValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Level -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_level"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_levelValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Temperature -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_temperature"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_temperatureValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+
+        <!-- Voltage -->
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/textView_voltage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/battery_voltage"
+                android:textSize="@dimen/table_textSize"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_voltageValue"
+                android:layout_weight="1"
+                android:layout_width="@dimen/table_ValueColumnWidth"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/table_textPaddingHorizontal"
+                android:paddingTop="@dimen/table_textPaddingVertical"
+                android:paddingRight="@dimen/table_textPaddingHorizontal"
+                android:paddingBottom="@dimen/table_textPaddingVertical"
+                android:text="@string/text_hyphen"
+                android:textSize="@dimen/table_textSize" />
+        </TableRow>
+
+        <!-- Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_dividerHeight"
+            android:background="@color/colorDivider" />
+    </TableLayout>
+
+    <!--
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_update" /> -->
+
+</LinearLayout>

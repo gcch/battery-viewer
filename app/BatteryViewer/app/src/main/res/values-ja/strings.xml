@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 tag
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Battery Viewer</string>
+    <string name="app_version">バージョン</string>
+    <string name="copyright">Copyright \u00A9 2015 School a-apps project.\nDesigned and developed by tag.</string>
+
+    <string name="notificationContentText">-</string>
+
+    <string name="switchDescription">-</string>
+    <string name="text_not_available">不明</string>
+    <string name="imageView_contentDescription">-</string>
+    <string name="text_hyphen">-</string>
+    <string name="text_start">開始</string>
+    <string name="text_stop">停止</string>
+    <string name="text_send">送信</string>
+    <string name="text_services">Services:</string>
+    <string name="text_intents">Intents:</string>
+    <string name="text_or">OR</string>
+    <string name="text_widget">ウィジェット</string>
+    <string name="text_notification">通知</string>
+    <string name="text_positive">適用</string>
+    <string name="text_negative">キャンセル</string>
+    <string name="text_milliseconds">ミリ秒</string>
+
+    <!-- Battery; Attributes -->
+    <string name="battery_present">搭載状態</string>
+    <string name="battery_health">健康状態</string>
+    <string name="battery_technology">種類</string>
+    <string name="battery_level">残量</string>
+    <string name="battery_status">充電状態</string>
+    <string name="battery_temperature">温度</string>
+    <string name="battery_voltage">電圧</string>
+
+    <!-- Battery: Health -->
+    <string name="battery_health_unknown">不明</string>
+    <string name="battery_health_good">良好</string>
+    <string name="battery_health_overheat">オーバーヒート</string>
+    <string name="battery_health_dead">不良</string>
+    <string name="battery_health_over_voltage">過電圧</string>
+    <string name="battery_health_unspecified_failure">特定不能</string>
+
+    <!-- Battery: Plugged -->
+    <string name="battery_plugged_ac">AC</string>
+    <string name="battery_plugged_usb">USB</string>
+    <string name="battery_plugged_wireless">無接点</string>
+
+    <!-- Battery: Status -->
+    <string name="battery_status_unknown">不明</string>
+    <string name="battery_status_charging">充電中</string>
+    <string name="battery_status_discharging">放電中</string>
+    <string name="battery_status_not_charging">放電中</string>
+    <string name="battery_status_full">満充電</string>
+
+    <!-- Menu: Main Activity -->
+    <string name="menuItem_batteryInfo">バッテリー情報</string>
+    <string name="menuItem_legends">凡例</string>
+    <string name="menuItem_about">アプリについて</string>
+
+    <!-- Activity: Battery Info -->
+    <string name="battery_present_exist">搭載</string>
+    <string name="battery_present_nil">非搭載</string>
+    <string name="text_update">更新</string>
+    <string name="batteryInfoTableTitle">バッテリー情報</string>
+
+    <!-- Activity: Debug -->
+    <string name="app_widget_update_service">ウィジェットの更新</string>
+    <string name="action_battery_changed">Intent.ACTION_BATTERY_CHANGED</string>
+    <string name="app_widget_update_service_for_1x1">AppWidget1x1UpdateService</string>
+    <string name="app_widget_update_service_for_2x1">AppWidget2x1UpdateService</string>
+    <string name="app_widget_service_restart_cycle">ウィジェット更新サービスの再起動周期</string>
+
+    <!-- Activity: Legends - Color -->
+    <string name="text_legendsBgColor">ウィジェットの背景色</string>
+    <string name="widget_background_unknown_description">不明</string>
+    <string name="widget_background_low_description">放電中\n[バッテリー残量 低 (0% - 15%)]</string>
+    <string name="widget_background_medium_description">放電中\n[バッテリー残量 中 (16% - 50%)]</string>
+    <string name="widget_background_high_description">放電中\n[バッテリー残量 高 (51 - 100%)]</string>
+    <string name="widget_background_charging_description">充電中</string>
+
+    <!-- Activity: Legends - Icon -->
+    <string name="text_legendsWidgetIcon">ウィジェットのアイコン</string>
+    <string name="widget_icon_unknown_description">不明</string>
+    <string name="widget_icon_lv0_description">バッテリー残量 0% - 10%</string>
+    <string name="widget_icon_lv1_description">バッテリー残量 11% - 20%</string>
+    <string name="widget_icon_lv2_description">バッテリー残量 21% - 40%</string>
+    <string name="widget_icon_lv3_description">バッテリー残量 41% - 60%</string>
+    <string name="widget_icon_lv4_description">バッテリー残量 61% - 80%</string>
+    <string name="widget_icon_lv5_description">バッテリー残量 81% - 100%</string>
+    <string name="widget_icon_charging_ac_description">AC アダプタでの充電</string>
+    <string name="widget_icon_charging_usb_description">USB ポート経由での充電</string>
+    <string name="widget_icon_charging_wireless_description">無接点充電器での充電</string>
+
+</resources>
